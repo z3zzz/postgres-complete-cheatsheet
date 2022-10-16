@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "migrate": "DATABASE_URL=postgresql://postgres:534649@localhost:5432/social node-pg-migrate",
+    "dev": "ts-node-dev --respawn --watch src src/index.ts"
+  },
+  "dependencies": {
+    "@fastify/postgres": "^5.1.0",
+    "@kwangtickets/common": "^1.3.0",
+    "fastify": "^4.5.3",
+    "fastify-plugin": "^4.2.1",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.8.0",
+    "pino-pretty": "^9.1.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.7.15",
+    "@types/pg": "^8.6.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.2"
+  }
+}
