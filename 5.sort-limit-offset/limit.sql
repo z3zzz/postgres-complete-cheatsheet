@@ -1,0 +1,10 @@
+SELECT *
+FROM products
+ORDER BY price
+LIMIT 5;
+
+SELECT *
+FROM products
+ORDER BY price DESC
+LIMIT 5
+OFFSET 5; 
